@@ -93,8 +93,11 @@ nav ul li a{
     font-size: 2.5em;
 }
 
-#hero button a{
+button a{
     text-decoration:none;
+}
+
+#hero button a{
     color: white;
 }
 
@@ -236,21 +239,27 @@ form{
   label{
     display: block;
     font-size:1.5em;
-    margin-bottom: 1em;
+    margin-bottom: .7em;
   }
 
   input{
     display: block;
     box-sizing: border-box;
-    width:100%;
+    width:80%;
     font-size: 1.1em;
     padding: .7em;
     background: #eee;
     border: none;
     border-bottom: 6px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: .9em;
+    border-bottom-left-radius: .9em;
     outline: none;
     margin-bottom: 1em;
     text-align:center;
+    margin-right:auto;
+    margin-left: auto;
 }
 
 button{
@@ -313,6 +322,10 @@ p.has-account{
         font-weight: bold;
     }
 
+    input{
+        width:100%;
+    }
+
 
 }
 
@@ -352,7 +365,7 @@ p.has-account{
     display: block;
     box-sizing: border-box;
     width:100%;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: .5em;
     background: #eee;
     border: none;
@@ -380,6 +393,13 @@ p.has-account{
 .register-button:hover{
     background: #aaa;
     color: #eee;
+}
+.signin>a{
+    color:rgb(18, 121, 70) ;
+}
+
+.signin a:hover{
+    color:#eee;
 }
 
  p.has-account{
