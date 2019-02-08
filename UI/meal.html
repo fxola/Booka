@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Booka</title>
+</head>
+<body>
+    <header>
+            <nav>
+                <article class="menu-icon">
+                    <img src="https://img.icons8.com/ios/40/000000/hamburger.png">
+                </article>
+    
+                <article class="logo">
+                    Booka
+                </article>
+    
+                <article class="menu">
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Meal</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="index.html">Log Out</a></li>
+                    </ul>
+                </article>
+                
+            </nav>
+    </header>
+    <main id="meal-main">
+        <section id="meal-wrapper">
+            <article id="add-meal">
+                    <a href="#meal"><button><p>Add Meal<p></button></a>
+            </article>
+            <article class="modal">
+                <article class="modal-container" id="meal">
+                    <form action="#" id="meal-form">
+                            <article class="form-content">
+                                <label class="meal-label" for="meal-name">Meal name</label>
+                                <input type="text"  class="meal-input" id="meal-name" autocomplete>
+        
+                                <label class="meal-label" for="meal-description">Description</label>
+                                <input type="text" class="meal-input" id="meal-description" >
+        
+                                <label class="meal-label" for="price">&#8358; Price</label>
+                                <input type="number" min="0" max="9" class="meal-input" id="price" autocomplete>
+        
+                                <label  class="meal-label" for="image">Add Image</label>
+                                <input class="meal-input"type="file" id="image">
+        
+                                <a href="#"><button class="meal-button" type="submit">Add meal</button><a/>
+                                <a href="#"><button class="meal-button close" type="submit">Close</button><a/>
+                            </article>
+                        </form>
+                </article>
+            </article>
+        </section>
+    </main>
+    <footer>
+            &#x00A9; 2019
+        </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
