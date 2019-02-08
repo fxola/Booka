@@ -510,39 +510,62 @@ p.has-account{
 }
 
 #meal-form{
-    width:auto;
+    width:40%;
     height:auto;
+    margin-top: 2em;
 }
 
-.modal-container{
-    position: fixed;
-    /* width:70%;
-    max-width: 400px; */
-    left:50%; 
-    -webkit-transform: translate(-50,-200%);
-    -ms-transform: translate(-50%,-200%);
-     transform: translate(-50%,-200%);
-}
-
-.modal:before{
-    content: "";
-    position: fixed;
-    display: none;
+#modal{
     background-color: rgba(0,0,0,.8);
+    width:100%;
+    height: 100vh;
+    position: absolute;
     top:0;
     left:0;
-    height:100%;
-    width:100%;
+    z-index: 10;
+    opacity:0;
+    visibility: hidden;
+    transition: ease-in-out 1s;
 }
 
-.modal:target :before{
-    display: block;
+#modal-content{
+    width: 75%;
+    height:auto;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    opacity:0;
+    visibility: hidden; 
+    transition: ease-in-out 1s;
 }
 
-.modal:target .modal-container{
-    -webkit-transform: translate(-50%,0);
-    -ms-transform: translate(-50%,0);
-     transform: translate(-50%,0);
+#modal:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal:target .modal-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+#meal-list{
+    display:flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    justify-content: space-around;
+}
+
+#meal-card{
+    /* flex: 1 1 300px; */
+
+    width:300px;
+    border:2px solid white;
+    margin:.5em;
 }
 
 @media(max-width:769px){
@@ -555,9 +578,7 @@ p.has-account{
         height: auto;
     }
 
-    /* .modal-container{
-        left:0%;
-    } */
+    
 }
 
 
