@@ -470,8 +470,10 @@ p.has-account{
 }
 
 #meal-wrapper{
-    position: relative;
-    top: 3.6em;
+    /* position: relative;
+    top: 3.6em; */
+    margin-left: 10px;
+    margin-right: 10px;
 }  
 
 .meal-input,.meal-label{
@@ -554,18 +556,35 @@ p.has-account{
 }
 
 #meal-list{
-    display:flex;
-    flex-wrap: wrap;
-    overflow-wrap: break-word;
-    justify-content: space-around;
+    margin-left: auto;
+    margin-right:auto;
+    width: 80%;
+    margin-top: 2em;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
 }
 
 #meal-card{
-    /* flex: 1 1 300px; */
+    border: 4px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+    /* color: ; */
+}
 
-    width:300px;
-    border:2px solid white;
-    margin:.5em;
+
+#meal-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid black;
 }
 
 @media(max-width:769px){
@@ -576,6 +595,10 @@ p.has-account{
     #meal-form{
         width:80vw;
         height: auto;
+    }
+
+    #meal-main{
+       height: 100%; 
     }
 
     
