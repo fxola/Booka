@@ -655,6 +655,10 @@ button.delete:hover{
 }
 
 @media(max-width:769px){
+
+    #meal-nav{
+        z-index: 9999;
+    }
     #add-meal button{
         width:auto;
     }
@@ -716,14 +720,22 @@ button.delete:hover{
     align-items: center;
     text-align: center;
     padding:.7em;
+    width:40%;
     /* color:#6e6f71; */
 
 }
 
-.board > p{
+.board > h2{
     text-align: right;
-    font-size:2em;
+    font-size:2.5em;
 }
+
+.board > p{
+    margin-top:10px;
+    font-size: 1.2em;
+}
+
+
 
  hr{
     border: 2.5px solid #6e6f71;
@@ -779,13 +791,19 @@ td{
     .board-table{
         margin-top:7em;
     }
-    /* .board-table{
-        padding-top: 25em;
-    } */
 
     #table{
         overflow-x: auto;
         overflow-x: auto;
+    }
+
+    .board >h2{
+        font-size:3em;
+    }
+
+    .board > p{
+        margin-top: .4em;
+        font-size: 1.2em;
     }
     
 }
