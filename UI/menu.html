@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/cartScript.js" async ></script>
     <title>Booka</title>
 </head>
 <body>
@@ -31,6 +32,35 @@
         </nav>
     </header>
     <main id="menu-main">
+        <article id="cart-tab">
+            <a href="#cart-modal"><p>5 items</p></a>
+        </article>
+
+        <article id="cart-modal">
+            <article class="cart-modal-content" id="cart-modal">
+                <article id="cart-content">
+                    <table id="cart-table">
+                        <thead>
+                            <tr>
+                                <th>ITEM</th>
+                                <th>PRICE</th>
+                                <th>QTY</th>
+                                <th>-</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-body">
+                         
+                            <tr class="band total-row">
+                                <td id="cart-row"><strong class="cart-total-title">Total</strong></td>
+                                <td id="cart-row"><span class="cart-total-price">&#8358; 0</span></td>
+                                <td id="cart-row" ><button class="btn btn-primary buy" type="button"><img src="https://img.icons8.com/windows/25/000000/checkout.png"></button></td>
+                                <td id="cart-row" ><a href="#"><button class="btn btn-primary close" type="button">close</button></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </article>
+        </article>
+        </article>
         <section id="menu-wrapper">
             <article id="set-menu">
                 <a href="#menu-modal" class="modal-open"><button><p>Set Menu<p></button></a>
@@ -74,8 +104,8 @@
                               <img src="img/amala.jpg" >
                             </article>
                             <article class="container">
-                              <p>&#8358; 500</p>
-                              <h4><b>Amala and Ewedu</b></h4>
+                              <p id="cart-item-price">&#8358; 500</p>
+                              <b><h4 id="cart-item-title">Jollof</h4></b>
                             </article>
                             <a><button class="to-cart">Add to cart</button></a>
                         </article>
@@ -87,8 +117,8 @@
                                   <img src="img/amala.jpg" >
                                 </article>
                                 <article class="container">
-                                  <p>&#8358; 500</p>
-                                  <h4><b>Amala and Ewedu</b></h4>
+                                  <p id="cart-item-price">&#8358; 500</p>
+                                  <b><h4 id="cart-item-title">Amala</h4></b>
                                 </article>
                                 <a><button class="to-cart">Add to cart</button></a>
                             </article>
@@ -100,8 +130,8 @@
                                       <img src="img/amala.jpg" >
                                     </article>
                                     <article class="container">
-                                      <p>&#8358; 500</p>
-                                      <h4><b>Amala and Ewedu</b></h4>
+                                      <p id="cart-item-price">&#8358; 500</p>
+                                      <b><h4 id="cart-item-title"> Ewedu</h4></b>
                                     </article>
                                     <a><button class="to-cart">Add to cart</button></a>
                                 </article>
@@ -113,8 +143,8 @@
                                           <img src="img/amala.jpg">
                                         </article>
                                         <article class="container">
-                                          <p>&#8358; 500</p>
-                                          <h4><b>Amala and Ewedu</b></h4>
+                                          <p class="price" id="cart-item-price">&#8358; 500</p>
+                                          <b><h4 class="title"id="cart-item-title">Amala and Ewedu</h4></b>
                                         </article>
                                         <a><button class="to-cart">Add to cart</button></a>
                                     </article>
