@@ -676,7 +676,7 @@ button.delete:hover{
     }
 
     button.edit, button.delete{
-        display:inline;
+        /* display:inline; */
         width:20%;
     }
 
@@ -827,6 +827,9 @@ td{
     top:60%;
     background: black;
     z-index: 999;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    padding-left: 5px;
 }
 
 #cart-tab  p{
