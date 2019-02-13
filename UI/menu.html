@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/cartScript.js" async ></script>
     <title>Booka</title>
 </head>
 <body>
@@ -33,7 +32,7 @@
     </header>
     <main id="menu-main">
         <article id="cart-tab">
-            <a href="#cart-modal"><p>5 items</p></a>
+            <a href="#cart-modal"><p id="cart-amount"><span class="cart-number">0 item(s)</p></a>
         </article>
 
         <article id="cart-modal">
@@ -49,7 +48,7 @@
                             </tr>
                         </thead>
                         <tbody id="cart-body">
-                         
+                          
                             <tr class="band total-row">
                                 <td id="cart-row"><strong class="cart-total-title">Total</strong></td>
                                 <td id="cart-row"><span class="cart-total-price">&#8358; 0</span></td>
@@ -159,5 +158,7 @@
         Hand-crafted By Afolabi &#x00A9; 2019
     </footer>
 <script src="js/script.js"></script>
+<script src="js/cartScript.js" ></script>
+
 </body>
 </html>
