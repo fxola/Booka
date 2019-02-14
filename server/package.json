@@ -1,0 +1,46 @@
+{
+  "name": "booka",
+  "version": "1.0.0",
+  "description": "Server side for a meal booking Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fxola/Booka.git"
+  },
+  "keywords": [
+    "food",
+    "menu",
+    "restaurant",
+    "order",
+    "meal"
+  ],
+  "author": "Afolabi Abass Ajanaku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fxola/Booka/issues"
+  },
+  "homepage": "https://github.com/fxola/Booka#readme",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-cli": "^6.26.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.11.0",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4"
+  }
+}
