@@ -573,7 +573,7 @@ p.has-account{
     transition: 0.3s;
     text-align: center;
     border-radius: 1em;
-    border: 3px solid black;
+    border: 7px solid black;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     background-color: #ddd;
