@@ -17,6 +17,12 @@ export default {
       name: 'Pounded Yam and Egusi',
       description: 'Nutritious and palatable',
       price: '700'
+    },
+    {
+      id: 4,
+      name: 'Rice and Beans',
+      description: 'Nutritious and palatable',
+      price: '400'
     }
   ]
 };
