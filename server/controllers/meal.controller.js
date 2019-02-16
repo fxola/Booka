@@ -38,6 +38,7 @@ class MealController {
         data: foundMeal
       });
     }
+
     return res.status(404).json({
       status: 'Not Successful',
       data: 'Meal Does Not Exist'
