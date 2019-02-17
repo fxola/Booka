@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   return res.send('Up and Running');
 });
 
-// Handle
+// Handles
 app.use('/api/v1/meals', mealRoutes);
 app.use('/api/v1/menu', menuRoutes);
 app.use('/api/v1/orders', orderRoutes);
