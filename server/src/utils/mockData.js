@@ -68,9 +68,9 @@ export default {
       id: 2,
       name: 'John Doe',
       address: 'No 2, Iweka road, Aba',
-      order_total: '1500',
-      phone_number: '08012345678',
-      meal_order: [
+      orderTotal: '1500',
+      phoneNumber: '08012345678',
+      mealOrder: [
         {
           id: 1,
           name: 'Amala and Ewedu',
@@ -89,9 +89,9 @@ export default {
       id: 4,
       name: 'Jane Doe',
       address: 'No 2, Iweka road, Aba',
-      order_total: '3000',
-      phone_number: '08012345678',
-      meal_order: [
+      orderTotal: '3000',
+      phoneNumber: '08012345678',
+      mealOrder: [
         {
           id: 2,
           name: 'Pounded Yam and Egusi',
