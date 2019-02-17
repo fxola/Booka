@@ -1,12 +1,12 @@
 class Meal {
-  constructor() {
-    this.id = null;
+  constructor(id, name, description, price) {
+    this.id = id;
 
-    this.name = null;
+    this.name = name;
 
-    this.description = null;
+    this.description = description;
 
-    this.price = null;
+    this.price = price;
   }
 }
 

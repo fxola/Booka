@@ -4,17 +4,13 @@ import Meal from '../models/meal.model';
 
 class MealService {
   static fetchAllMeals() {
-    const validMeal = mockData.meals.map(meal => {
-      const newMeal = new Meal();
-      newMeal.id = meal.id;
-      newMeal.name = meal.name;
-      newMeal.description = meal.description;
-      newMeal.price = meal.price;
+    const MealList = mockData.meals.map(meal => {
+      const mealInstance = new Meal(meal.id, meal.name, meal.description, meal.price);
 
-      return newMeal;
+      return mealInstance;
     });
 
-    return validMeal;
+    return MealList;
   }
 
   static addMeal(meal) {
@@ -47,11 +43,12 @@ class MealService {
   static updateMeal(id, incomingMeal) {
     const mealToBeUpdatedIndex = mockData.meals.find(meal => meal.id === parseInt(id, 10));
 
-    const newMeal = new Meal();
-    newMeal.id = parseInt(id, 10);
-    newMeal.name = incomingMeal.name;
-    newMeal.description = incomingMeal.description;
-    newMeal.price = incomingMeal.price;
+    const newMeal = new Meal(
+      parseInt(id, 10),
+      incomingMeal.name,
+      incomingMeal.description,
+      incomingMeal.price
+    );
 
     if (mealToBeUpdatedIndex) {
       mockData.meals.splice(mealToBeUpdatedIndex, 1, newMeal);
