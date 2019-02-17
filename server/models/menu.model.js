@@ -1,5 +1,5 @@
 class Menu {
-  constructor(id, meals,date) {
+  constructor(id, meals, date) {
     this.id = id;
 
     this.meals = meals;
