@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 import mockData from '../utils/mockData';
 
 import Menu from '../models/menu.model';
@@ -15,13 +17,13 @@ class MenuService {
   static addMenu(menu) {
     const menuLength = mockData.menu.length;
 
-    const lastMealId = mockData.menu[menuLength - 1].id;
+    const lastMenuId = mockData.menu[menuLength - 1].id;
 
-    menu.id = lastMealId + 1;
+    menu.id = lastMenuId + 1;
 
-    mockData.meals.push(menu);
+    mockData.menu.push(menu);
 
-    return meal;
+    return menu;
   }
 }
 
