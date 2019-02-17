@@ -3,7 +3,7 @@ import MenuService from '../services/menu.service';
 class MenuController {
   static addMenu(req, res) {
     const newMenu = req.body;
-    const createdMenu = MealService.addMeal(newMenu);
+    const createdMenu = MealService.addMenu(newMenu);
 
     return res.status(201).json({
       status: 'successful',
