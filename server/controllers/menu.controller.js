@@ -3,7 +3,7 @@ import MenuService from '../services/menu.service';
 class MenuController {
   static addMenu(req, res) {
     const newMenu = req.body;
-    const createdMenu = MealService.addMenu(newMenu);
+    const createdMenu = MenuService.addMenu(newMenu);
 
     return res.status(201).json({
       status: 'successful',
@@ -20,3 +20,5 @@ class MenuController {
     });
   }
 }
+
+export default MenuController;
