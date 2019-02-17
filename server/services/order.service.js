@@ -46,10 +46,10 @@ class OrderService {
     const lastOrderId = mockData.orders[orderLength - 1].id;
 
     order.id = lastOrderId + 1;
-
-    mockData.orders.push(order);
-
-    return order;
+    if (mockData.orders.push(order)) {
+      return order;
+    }
+    return false;
   }
 }
 
