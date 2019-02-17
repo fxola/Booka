@@ -68,7 +68,7 @@ export default {
       id: 2,
       name: 'John Doe',
       address: 'No 2, Iweka road, Aba',
-      orderAmount: '1500',
+      order_total: '1500',
       phone_number: '08012345678',
       meal_order: [
         {
@@ -89,7 +89,7 @@ export default {
       id: 4,
       name: 'Jane Doe',
       address: 'No 2, Iweka road, Aba',
-      orderAmount: '3000',
+      order_total: '3000',
       phone_number: '08012345678',
       meal_order: [
         {
