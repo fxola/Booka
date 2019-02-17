@@ -20,8 +20,7 @@ class MealController {
      * }
      */
     const newMeal = req.body;
-
-    const createdMeal = MealService(newMeal);
+    const createdMeal = MealService.addMeal(newMeal);
 
     return res.status(201).json({
       status: 'successful',
@@ -42,6 +41,39 @@ class MealController {
     return res.status(404).json({
       status: 'Not Successful',
       data: 'Meal Does Not Exist'
+    });
+  }
+
+  static removeAMeal(req, res) {
+    const deletedMeal = MealService.removeMeal(req.params.id);
+
+    if (deletedMeal) {
+      return res.status(401).json({
+        status: 'deleted succesfully',
+        data: deletedMeal
+      });
+    }
+
+    return res.status(404).json({
+      status: 'Not Successful',
+      data: 'Meal Not Found'
+    });
+  }
+
+  static updateMeal(req, res) {
+    const update = req.body;
+    const updatedMeal = MealService.updateMeal(req.params.id, update);
+
+    if (updatedMeal) {
+      return res.status(201).json({
+        status: 'Meal Updated Successfully',
+        data: updatedMeal
+      });
+    }
+
+    return res.status(404).json({
+      status: 'Not Successful',
+      data: 'Meal Not Found'
     });
   }
 }
