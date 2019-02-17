@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 // Routes
 import mealRoutes from './routes/meal.route';
 import menuRoutes from './routes/menu.route';
+import orderRoutes from './routes/order.route';
 
 const app = express();
 
@@ -16,8 +17,10 @@ app.get('/', (req, res) => {
   return res.send('Up and Running');
 });
 
+// Handle
 app.use('/api/v1/meals', mealRoutes);
 app.use('/api/v1/menu', menuRoutes);
+app.use('/api/v1/orders', orderRoutes);
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
