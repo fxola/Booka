@@ -51,10 +51,12 @@
                         <tbody id="cart-body">
                           
                             <tr class="band total-row">
-                                <td id="cart-row"><strong class="cart-total-title">Total</strong></td>
-                                <td id="cart-row"><span class="cart-total-price">&#8358; 0</span></td>
-                                <td id="cart-row" ><button class="buy" type="button"><img src="https://img.icons8.com/windows/25/000000/checkout.png"></button></td>
-                                <td id="cart-row" ><a href="#"><button class="close" type="button">close</button></a></td>
+                                <td  colspan="2" id="cart-row"><strong class="cart-total-title">Total</strong></td>
+                                <td colspan="2" id="cart-row"><span class="cart-total-price">&#8358; 0</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="cart-row" ><a href="#"><button class="buy confirm" type="button">checkout</button></a></td>
+                                <td colspan="2" id="cart-row" ><a href="#"><button class="cancel" type="button">close</button></a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -91,8 +93,8 @@
                                 </div>
                             </div>  
         
-                            <a href="#"><button class="menu-button" type="submit">Save Changes</button><a/>
-                            <a href="#"><button class="menu-button close" type="submit">Close</button><a/>
+                            <a href="#"><button class="menu-button confirm" type="submit">Save Changes</button><a/>
+                            <a href="#"><button class="menu-button cancel" type="submit">Close</button><a/>
                         </form>
                 </article>
             </article>
