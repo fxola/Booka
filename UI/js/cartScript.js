@@ -91,7 +91,7 @@ function addItemToCart(title, price){
     cartRowContents = ` <td id="cart-row">${title}</td>
                         <td id="cart-row" class="cart-price">${price}</td>
                         <td id="cart-row"><input class="cart-quantity-input" type="number" value="1"></td>
-                        <td id="cart-row" ><button class="close remove-item" type="button">X</button></td>`;
+                        <td id="cart-row" ><button class="cancel remove-item" type="button">X</button></td>`;
 
     cartRow.innerHTML = cartRowContents;
     totalRow.insertAdjacentElement('beforebegin', cartRow);
