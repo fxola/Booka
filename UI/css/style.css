@@ -549,10 +549,10 @@ p.has-account {
   transition: 0.3s;
   text-align: center;
   border-radius: 1em;
-  border: 7px solid black;
+  border: 7px solid rgba(0, 0, 0, 0.41);
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  background-color: #ddd;
+  background-color: rgba(0, 5, 8, 0.5);
 }
 
 #meal-details:hover {
@@ -589,10 +589,12 @@ p.has-account {
 
 #meal-details h4 {
   font-size: 0.8em;
+  color:#eee;
 }
 
 #meal-list > a {
   position: absolute;
+  
 }
 
 .card-img {
@@ -607,30 +609,32 @@ p.has-account {
 
 button.edit,
 button.delete {
-  padding: 0;
   font-size: 0.8em;
   margin: 3px;
+  width: 36%;
+  padding: .5em;
 }
 
 button.edit {
-  border-color: green;
-  color: green;
-  background: rgba(145, 255, 117, 0.5);
+  color: #01ce1f;
+  border-color: #01ce1f;
+  background: rgba(5, 123, 22, 0.4);
 }
 
 button.edit:hover {
   color: #eee;
-  background-color: green;
+  background-color: #01ce1f;
 }
 
 button.delete {
-  color: #5a0303;
-  border-color: #5a0303;
+  color: #e80303;
+  border-color: #e80303;
+  background-color: #4a04048c;
 }
 
 button.delete:hover {
   color: #eee;
-  background-color: #5a0303;
+  background-color: #e80303;
 }
 
 @media (max-width: 769px) {
@@ -652,8 +656,8 @@ button.delete:hover {
 
   button.edit,
   button.delete {
-    /* display:inline; */
-    width: 20%;
+    width: 36%;
+    padding: .5em;
   }
 }
 
@@ -698,18 +702,19 @@ button.delete:hover {
   text-align: center;
   padding: 0.7em;
   width: 40%;
+  background: #010d1580;
 }
 
-.board-revenue{
-  background: rgba(0, 128, 0,.3);
+.board-revenue {
+  /* background: rgba(0, 128, 0,.3); */
   border: 2px solid #00c300;
-  color:#02e002;
+  color: #00c300;
 }
 
-.board-orders{
-  background: rgba(255, 255, 0,.14);
+.board-orders {
+  /* background: rgba(255, 255, 0,.14); */
   border: 2px solid #b9b902;
-  color:yellow;
+  color: #b9b902;
 }
 
 .board > h2 {
@@ -722,8 +727,12 @@ button.delete:hover {
   font-size: 1.2em;
 }
 
-hr {
-  border: 2.5px solid #000819e0;
+.board-orders hr {
+  border: 2.5px solid #b9b902;
+  border-radius: 2em;
+}
+.board-revenue hr {
+  border: 2.5px solid #00c300;
   border-radius: 2em;
 }
 
@@ -841,6 +850,7 @@ td {
   height: 250px;
   overflow: auto;
   border: 2px solid black;
+  background: #403e3e6e;
 }
 
 #menu-options {
@@ -1131,14 +1141,14 @@ td {
 }
 
 .confirm:hover {
-  background: green;
+  background: #01ce1f;
   color: white;
 }
 
 .cancel {
   border-color: red;
   color: red;
-  background: rgba(248, 146, 146, 0.5);
+  background: rgba(248, 146, 146, 0.2);
 }
 
 .cancel:hover {
