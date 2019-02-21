@@ -48,8 +48,8 @@ class MealController {
     const deletedMeal = MealService.removeMeal(req.params.id);
 
     if (deletedMeal) {
-      return res.status(204).json({
-        status: 'deleted succesfully',
+      return res.status(200).json({
+        status: 'meal deleted succesfully',
         data: deletedMeal
       });
     }
