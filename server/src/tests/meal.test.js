@@ -55,4 +55,48 @@ describe('Test for All Meal Endpoints', () => {
         });
     });
   });
+
+  describe('PUT /meals/:id', () => {
+    /**
+     * confirm that the endpoint returns the required status code
+     * confirm that the response body is an object
+     * confirm that the response object contains the required keys
+     */
+    it('should update the given meal option in the database', done => {
+      chai
+        .request(app)
+        .put('/api/v1/meals/2')
+        .set('content-type', 'application/json')
+        .send({
+          id: 6,
+          name: 'New meal option',
+          description: 'Nutritious and palatable',
+          price: '800'
+        })
+        .end((err, res) => {
+          expect(res).to.have.status(202);
+          expect(res.body).to.be.an('object');
+          expect(res.body.data).to.be.an('object');
+          expect(res.body.data).to.have.keys('id', 'name', 'description', 'price');
+          done();
+        });
+    });
+  });
+
+  describe('DELETE /meals/:id', () => {
+    /**
+     * confirm that the endpoint returns the required status code
+     */
+    it('should delete the given meal option in the database', done => {
+      chai
+        .request(app)
+        .delete('/api/v1/meals/6')
+        .set('content-type', 'application/json')
+        .end((err, res) => {
+          expect(res).to.have.status(200);
+          expect(res.body.status).to.equal('meal deleted succesfully');
+          done();
+        });
+    });
+  });
 });
