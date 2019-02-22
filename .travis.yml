@@ -7,7 +7,6 @@ env:
   global: CODECLIMATE_REPO_TOKEN=2abf6d11f0721a9e4a90f83b600247d7d14c5045f1a9bc9aeafa70bac3e2e037
 
 install:
-  - cd server
   - npm install
 
 test:
