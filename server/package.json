@@ -7,7 +7,7 @@
     "test": "mocha src/tests/*.js --require @babel/register --exit || true",
     "test-watch": "nodemon --exec \"npm test\"",
     "start": "nodemon --exec babel-node src/index.js",
-    "build": "babel src -d dist",
+    "build": "rm -rf dist &&  babel src -d dist && node dist/index",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
     "coveralls-coverage": "coveralls < lcov.info",
     "codeclimate-coverage": "codeclimate-test-reporter < lcov.info",
