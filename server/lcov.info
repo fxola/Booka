@@ -1,5 +1,5 @@
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src/index.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src/index.js
 FN:16,(anonymous_1)
 FN:25,(anonymous_2)
 FNF:2
@@ -28,7 +28,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\controllers/meal.controller.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\controllers/meal.controller.js
 FNF:0
 FNH:0
 DA:1,1
@@ -63,7 +63,7 @@ BRF:6
 BRH:3
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\controllers/menu.controller.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\controllers/menu.controller.js
 FNF:0
 FNH:0
 DA:1,1
@@ -79,7 +79,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\controllers/order.controller.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\controllers/order.controller.js
 FNF:0
 FNH:0
 DA:1,1
@@ -110,7 +110,7 @@ BRF:6
 BRH:4
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\models/meal.model.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\models/meal.model.js
 FN:2,Meal
 FNF:1
 FNH:1
@@ -127,7 +127,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\models/menu.model.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\models/menu.model.js
 FN:2,Menu
 FNF:1
 FNH:1
@@ -143,7 +143,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\models/order.model.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\models/order.model.js
 FN:2,Order
 FNF:1
 FNH:1
@@ -162,7 +162,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\routes/meal.route.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\routes/meal.route.js
 FNF:0
 FNH:0
 DA:1,1
@@ -180,7 +180,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\routes/menu.route.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\routes/menu.route.js
 FNF:0
 FNH:0
 DA:1,1
@@ -195,7 +195,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\routes/order.route.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\routes/order.route.js
 FNF:0
 FNH:0
 DA:1,1
@@ -211,7 +211,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\services/meal.service.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\services/meal.service.js
 FN:7,(anonymous_7)
 FN:29,(anonymous_10)
 FN:35,(anonymous_12)
@@ -258,7 +258,7 @@ BRF:6
 BRH:3
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\services/menu.service.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\services/menu.service.js
 FN:9,(anonymous_7)
 FNF:1
 FNH:1
@@ -281,7 +281,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\services/order.service.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\services/order.service.js
 FN:8,(anonymous_7)
 FN:23,(anonymous_9)
 FNF:2
@@ -317,7 +317,7 @@ BRF:4
 BRH:3
 end_of_record
 TN:
-SF:C:\Users\Olu\Desktop\2019 Projects\Booka_main\Booka\server\src\utils/mockData.js
+SF:C:\Users\Olu\Desktop\2019 Projects\Booka\server\src\utils/mockData.js
 FNF:0
 FNH:0
 DA:1,1
