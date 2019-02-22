@@ -80,6 +80,22 @@ describe('Test for All Meal Endpoints', () => {
           done();
         });
     });
+
+    it('should return 404 if the given meal option does not exist', done => {
+      chai
+        .request(app)
+        .put('/api/v1/meals/99999')
+        .set('content-type', 'application/json')
+        .send({
+          name: 'New meal option',
+          description: 'Nutritious and palatable',
+          price: '800'
+        })
+        .end((err, res) => {
+          expect(res).to.have.status(404);
+          done();
+        });
+    });
   });
 
   describe('DELETE /meals/:id', () => {
@@ -94,6 +110,17 @@ describe('Test for All Meal Endpoints', () => {
         .end((err, res) => {
           expect(res).to.have.status(200);
           expect(res.body.status).to.equal('meal deleted succesfully');
+          done();
+        });
+    });
+
+    it('should return 404 if the given meal option does not exist in the database', done => {
+      chai
+        .request(app)
+        .delete('/api/v1/meal/99999')
+        .set('content-type', 'application/json')
+        .end((err, res) => {
+          expect(res).to.have.status(404);
           done();
         });
     });

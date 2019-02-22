@@ -132,5 +132,37 @@ describe('Test for All Orders Endpoints', () => {
           done();
         });
     });
+
+    it('should return 404 if order does not exist', done => {
+      chai
+        .request(app)
+        .put('/api/v1/orders/99999')
+        .set('content-type', 'application/json')
+        .send({
+          id: 2,
+          name: 'Jane Doe',
+          address: 'No 19, Iweka road, Aba',
+          orderTotal: '1500',
+          phoneNumber: '08012345678',
+          mealOrder: [
+            {
+              id: 1,
+              name: 'Amala and Ewedu',
+              description: 'Tasty and Palatable',
+              price: '600'
+            },
+            {
+              id: 2,
+              name: 'Afang and Fufu',
+              description: 'Nutritious and Yummy',
+              price: '900'
+            }
+          ]
+        })
+        .end((err, res) => {
+          expect(res).to.have.status(404);
+          done();
+        });
+    });
   });
 });
