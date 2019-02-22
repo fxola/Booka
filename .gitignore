@@ -3,3 +3,4 @@ server/.nyc_output/
 server/dist/
 server/lcov.info
 UI/node_modules/
+node_modules/
