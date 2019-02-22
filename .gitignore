@@ -1,2 +1,4 @@
 server/node_modules/
+server/.nyc_output/
+server/lcov.info/
 UI/node_modules/
