@@ -68,7 +68,6 @@ describe('Test for All Meal Endpoints', () => {
         .put('/api/v1/meals/2')
         .set('content-type', 'application/json')
         .send({
-          id: 6,
           name: 'New meal option',
           description: 'Nutritious and palatable',
           price: '800'
