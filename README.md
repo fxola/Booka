@@ -1,10 +1,4 @@
-[![Build Status](https://travis-ci.org/fxola/Booka.svg?branch=master)](https://travis-ci.org/fxola/Booka)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/b4dc73182e68ee4b24ef/maintainability)](https://codeclimate.com/github/fxola/Booka/maintainability)
-
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b4dc73182e68ee4b24ef/test_coverage)](https://codeclimate.com/github/fxola/Booka/test_coverage)
-
-[![Coverage Status](https://coveralls.io/repos/github/fxola/Booka/badge.svg?branch=feature-add-badges-to-readme)](https://coveralls.io/github/fxola/Booka?branch=feature-add-badges-to-readme)
+[![Build Status](https://travis-ci.org/fxola/Booka.svg?branch=master)](https://travis-ci.org/fxola/Booka) [![Maintainability](https://api.codeclimate.com/v1/badges/b4dc73182e68ee4b24ef/maintainability)](https://codeclimate.com/github/fxola/Booka/maintainability)  [![Test Coverage](https://api.codeclimate.com/v1/badges/b4dc73182e68ee4b24ef/test_coverage)](https://codeclimate.com/github/fxola/Booka/test_coverage) [![Coverage Status](https://coveralls.io/repos/github/fxola/Booka/badge.svg?branch=feature-add-badges-to-readme)](https://coveralls.io/github/fxola/Booka?branch=feature-add-badges-to-readme)
 
 # Booka
 
