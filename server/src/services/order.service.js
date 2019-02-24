@@ -24,7 +24,6 @@ class OrderService {
 
     const newOrder = new Order(
       parseInt(id, 10),
-      incomingOrder.id,
       incomingOrder.name,
       incomingOrder.address,
       incomingOrder.orderTotal,
