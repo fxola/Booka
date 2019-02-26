@@ -34,7 +34,7 @@ class MealService {
   static removeMeal(id) {
     const mealIndex = mockData.meals.findIndex(meal => meal.id === parseInt(id, 10));
 
-    if (mealIndex) {
+    if (mealIndex !== -1) {
       return mockData.meals.splice(mealIndex, 1);
     }
     return false;
