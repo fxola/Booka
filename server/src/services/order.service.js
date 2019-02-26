@@ -30,8 +30,7 @@ class OrderService {
       incomingOrder.phoneNumber,
       incomingOrder.mealOrder
     );
-
-    if (orderToBeUpdatedIndex) {
+    if (orderToBeUpdatedIndex !== -1) {
       mockData.orders.splice(orderToBeUpdatedIndex, 1, newOrder);
     } else {
       return false;

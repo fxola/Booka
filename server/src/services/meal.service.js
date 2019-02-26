@@ -42,7 +42,6 @@ class MealService {
 
   static updateMeal(id, incomingMeal) {
     const mealToBeUpdatedIndex = mockData.meals.findIndex(meal => meal.id === parseInt(id, 10));
-
     const newMeal = new Meal(
       parseInt(id, 10),
       incomingMeal.name,
@@ -50,7 +49,7 @@ class MealService {
       incomingMeal.price
     );
 
-    if (mealToBeUpdatedIndex) {
+    if (mealToBeUpdatedIndex !== -1) {
       mockData.meals.splice(mealToBeUpdatedIndex, 1, newMeal);
     } else {
       return false;
