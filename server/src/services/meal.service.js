@@ -41,7 +41,7 @@ class MealService {
   }
 
   static updateMeal(id, incomingMeal) {
-    const mealToBeUpdatedIndex = mockData.meals.find(meal => meal.id === parseInt(id, 10));
+    const mealToBeUpdatedIndex = mockData.meals.findIndex(meal => meal.id === parseInt(id, 10));
 
     const newMeal = new Meal(
       parseInt(id, 10),

@@ -20,11 +20,10 @@ class OrderService {
   }
 
   static updateOrder(id, incomingOrder) {
-    const orderToBeUpdatedIndex = mockData.orders.find(order => order.id === parseInt(id, 10));
+    const orderToBeUpdatedIndex = mockData.orders.findIndex(order => order.id === parseInt(id, 10));
 
     const newOrder = new Order(
       parseInt(id, 10),
-      incomingOrder.id,
       incomingOrder.name,
       incomingOrder.address,
       incomingOrder.orderTotal,
