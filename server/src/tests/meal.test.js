@@ -105,7 +105,7 @@ describe('Test for All Meal Endpoints', () => {
     it('should delete the given meal option in the database', done => {
       chai
         .request(app)
-        .delete('/api/v1/meals/6')
+        .delete('/api/v1/meals/2')
         .set('content-type', 'application/json')
         .end((err, res) => {
           expect(res).to.have.status(200);
